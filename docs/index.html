@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="styles3.css">
 </head>
 <body>
-
+    <audio id="background-music" autoplay loop>
+        <source src="assets/music/classicMusic.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
     <!-- Menu -->
     <header>
         <div class="header-content">
             <h1>Lucas Petenusso Viana</h1>
+            <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button> <!-- Ícone de Menu Hamburguer -->
             <nav>
                 <a href="#projects">Projects</a>
                 <a href="assets\resume\Currículo2025 English.pdf">CV/Resume</a>
@@ -97,7 +101,7 @@
             </select>
 
             <!-- Categoria: Desenvolvimento -->
-            <div class="projects-grid">
+            <div class="projects-grid" id="projects-grid">
                 <!-- Tema: Desenvolvimento Android -->
                 <div class="project-item" data-tech="Android Development">
                     <img src="assets/projects/Android.png" alt="Android Development">

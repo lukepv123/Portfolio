@@ -190,3 +190,200 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+
+.menu-toggle{
+    display: none;
+}
+
+/* responsividade */
+
+
+
+
+/* Responsividade para iPhone 11 */
+@media screen and (max-width: 828px) and (max-height: 1792px) {
+
+    nav {
+        display: none;
+        flex-direction: column; 
+        width: 100%;
+        text-align: left;
+        padding-left: 5%;
+        padding-top: 10px;
+    }
+
+    /* Exibe o botão hamburguer */
+    .menu-toggle {
+        
+        display: block;
+        cursor: pointer;
+        font-size: 2em;
+        background: none;
+        border: none;
+        color: antiquewhite;
+        align-self: flex-start;
+        padding-left: 5%;
+    }
+
+    /* Quando o menu estiver ativo, exibe a navegação */
+    nav.active {
+        display: none;
+    }
+
+
+    /* Outros ajustes para a responsividade */
+    .header-content {
+        display: flex;
+      
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Ajustando o título no header */
+    header h1 {
+        font-size: 1em; /* Ajuste do tamanho da fonte para o iPhone 11 */
+        display: none;
+    }
+    
+    /* Ajustando as faixas de empresas e tecnologias */
+    .info-strip {
+        font-size: 0.7em;
+        gap: 10px;
+    }
+
+    /* Ajustando os ícones */
+    .icon {
+        max-width: 23px; /* Ajustando o tamanho do ícone para maior proporcionalidade */
+    }
+
+    .icon-row{
+        display: block;
+    }
+    /* Ajustando o layout da seção de conteúdo */
+    .content-section {
+        flex-direction: column;
+        padding: 15px; /* Ajuste da quantidade de padding */
+    }
+
+    /* Ajustando as seções esquerda e direita */
+    .left-section, .right-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Ajustando as imagens do perfil */
+    .profile-image {
+        max-width: 60%; /* Ajuste da largura da imagem */
+    }
+
+    /* Ajustando o texto da descrição */
+    .description {
+        font-size: 1.0em; /* Ajuste do tamanho da fonte */
+    }
+
+
+    /* Ajustando o grid de projetos */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        transition: background-color 0.3s ease;
+      
+    }
+
+    /* Ajustando os itens do projeto */
+    .project-item {
+        max-width: 280px; /* Ajuste do tamanho máximo do item do projeto */
+        margin: 15px auto;
+        border-radius: 4%;
+    }
+
+    /* Ajustando o tamanho do texto do título do projeto */
+    .project-item h3 {
+        font-size: 1.1em; /* Ajuste do tamanho do título */
+    }
+
+    /* Ajustando o texto do botão do projeto */
+    .project-btn {
+        font-size: 0.85em; /* Ajuste do tamanho da fonte */
+    }
+
+    /* Ajuste no rodapé */
+    footer {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    /* Ajustes gerais no header */
+    header {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ajuste no conteúdo do header */
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    /* Ajustando os links de navegação */
+    nav a {
+        font-size: 1em; /* Ajuste do tamanho da fonte */
+        margin: 5px;
+    }
+
+    /* Ajuste na barra de navegação */
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Ajuste na descrição do projeto */
+    .project-item p {
+        font-size: 0.9em; /* Ajuste no tamanho da fonte */
+    }
+
+    
+
+   /* Definindo a animação de transição */
+    @keyframes changeColor {
+        0% {
+            background-color: #dddddd; /* Cor inicial */
+        }
+        50% {
+            background-color: #97cdf0; /* Cor inicial */
+        }
+       
+        100% {
+            background-color: #dddddd; /* Retorna à cor inicial */
+        }
+    }
+
+    /* Ajuste no conteúdo de depoimentos */
+    .testimonials blockquote {
+        font-size: 1em; /* Ajuste do tamanho da fonte */
+        margin: 15px auto;
+        animation: changeColor 5s infinite;
+    }
+
+    .testimonials cite {
+        font-size: 1em;
+        padding-right: 15px;
+        
+    }
+
+    /* Ajuste nas faixas de empresa e tecnologia */
+    .info-strip {
+        font-size: 1em;
+        padding-left: 10%;
+    }
+
+    /* Ajustes nos itens de projeto */
+    .project-item img {
+        max-width: 60%; /* Ajuste da largura da imagem */
+    }
+}
