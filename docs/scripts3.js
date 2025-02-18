@@ -44,7 +44,7 @@ window.onscroll = function() {
     var audio = document.getElementById('background-music');
 
     // Define o volume (0.0 é mudo, 1.0 é o volume máximo)
-    audio.volume = 0.1; // Ajuste o valor para a sua necessidade (0.0 a 1.0)
+    audio.volume = 0.05; // Ajuste o valor para a sua necessidade (0.0 a 1.0)
 
 
     // Você pode usar um evento para alterar o volume ou o tempo dinamicamente
