@@ -1,0 +1,23 @@
+.account-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.account-item:hover {
+    background-color: var(--neutral-100);
+}
+
+.account-item h5 {
+    color: var(--neutral-900);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}

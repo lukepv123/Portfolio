@@ -1,177 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backend Developer Portfolio</title>
-    <link rel="stylesheet" href="styles3.css">
-</head>
-<body>
-    <audio id="background-music" autoplay loop>
-        <source src="assets/music/classicMusic.mp3" type="audio/mp3">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
-    <!-- Menu -->
-    <header>
-        <div class="header-content">
-            <h1>Lucas Petenusso Viana</h1>
-            <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button> <!-- Ícone de Menu Hamburguer -->
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="assets\resume\Curriculo2026 EN.pdf">CV/Resume</a>
-                <a href="#contact">Contact</a>
-                <a href="https://www.linkedin.com/in/lucas-petenusso-viana-710b5024b/">Linkedin</a>
-            </nav>
-        </div>
-    </header>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/imgs/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Faixa de Empresas (com ícones na mesma linha) -->
-    <section id="companies" class="info-strip">
-        <p><strong>I've done work for</strong></p>
-        <div class="icon-row">
-            <img src="assets/companies/Logo_verde.jpg" alt="Company 1" class="icon">
-        </div>
-    </section>
+    <!-- SEO -->
+    <title>Felipe Kenzo | Front-end Developer & UX/UI Designer</title>
+    <meta name="description" content="Portfólio de Felipe Kenzo, Front-end Developer e UX/UI Designer. Desenvolvimento de interfaces modernas, responsivas e funcionais, unindo design estratégico e código de qualidade.">
+    <meta name="keywords" content="Front-end, UX, UI, Design de Interfaces, Experiência do Usuário, React, HTML, CSS, JavaScript, Portfólio, Felipe Kenzo">
+    <meta name="author" content="Felipe Kenzo">
 
-    <!-- Faixa de Tecnologias (com ícones na mesma linha) -->
-    <section id="technologies-strip" class="info-strip">
-        <p><strong>Technologies</strong></p>
-        <div class="icon-row">
-            <img src="assets/tecnologies/docker.png" alt="Docker" class="icon">
-            <img src="assets/tecnologies/java.png" alt="Java" class="icon">
-            <!-- <img src="assets/tecnologies/nodejs.png" alt="NodeJS" class="icon"> -->
-            <img src="assets/tecnologies/sql.png" alt="SQL" class="icon">
-            <img src="assets/tecnologies/python.png" alt="Python" class="icon">
-            <img src="assets/tecnologies/c.png" alt="C" class="icon">
-            <img src="assets/tecnologies/c++.png" alt="C++" class="icon">
-            <!-- <img src="assets/tecnologies/csharp.png" alt="C#" class="icon"> -->
-            <img src="assets/tecnologies/vb.net.png" alt="VB.NET" class="icon">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Felipe Kenzo | Front-end Developer & UX/UI Designer">
+    <meta property="og:description" content="Confira meu portfólio: projetos que unem design de interfaces e desenvolvimento front-end, criando experiências digitais completas e centradas no usuário.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portfolio-kenzo-kohl.vercel.app/">
+    <meta property="og:image" content="https://portfolio-kenzo-kohl.vercel.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
 
-            <!-- alteracoes 2.0 -->
-            <img src="assets/tecnologies/Ruby.png" alt="Ruby" class="icon">
-            <img src="assets/tecnologies/terraForm.png" alt="terraForm" class="icon">
-            <!-- <img src="assets/tecnologies/vagrant.png" alt="Vagrant" class="icon"> -->
-            <img src="assets/tecnologies/devOps.png" alt="DevOps" class="icon">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Felipe Kenzo | Front-end Developer & UX/UI Designer">
+    <meta name="twitter:description" content="Portfólio de design e desenvolvimento front-end. Interfaces intuitivas, usabilidade e código bem estruturado.">
+    <meta name="twitter:image" content="https://portfolio-kenzo-kohl.vercel.app/og-image.jpg">
 
-            
-        </div>
-    </section>
-
-    <!-- Sessão Dividida com Imagem e Projetos -->
-    <div class="content-section">
-        <!-- Coluna Esquerda - Imagem e Texto -->
-        <div class="left-section">
-            <img src="assets/You/User.jfif" alt="Profile Image" class="profile-image">
-            <p class="description">As a Intern, I've had the opportunity to collaborate on various projects, helping organizations improve their technological strategies and digital solutions.</p>
-        </div>
-        <!-- Coluna Direita - Projetos por Categoria -->
-        <div class="right-section">
-
-            <!-- Seção de Depoimentos -->
-
-            <!-- example -->
-
-            <!-- <section class="testimonials">
-                <blockquote>
-                    "In a short period of time, Joe has transformed our team into user advocates, a transformation that has given us a unique competitive advantage."
-                    <cite>Matthew Bray, Ph.D., IT Director, Wolters Kluwer</cite>
-                </blockquote>
-            </section> -->
-
-            <section class="testimonials">
-                <blockquote>
-                    "Lucas is curious, open-minded, and always eager to learn. He receives feedback with humility, constantly strives to improve, and stands out for his critical thinking, clear communication, and excellent teamwork."
-                    <cite>Rubens Souza, Senior IT Consultant & Customer Support Engineer, Rusz It</cite>
-                </blockquote>
-            </section>
-
-            <!-- Filtro por Tecnologias -->
-            <h2>Projects</h2>
-            <label for="tech-filter">Filter by Technology:</label>
-            <select id="tech-filter" onchange="filterProjects()">
-                <option value="all">All</option>
-                <!-- <option value="Desktop Development">Desktop Development</option> -->
-                <option value="Data Analysis">Data Analysis</option>
-                <option value="Computer Vision">Computer Vision</option>
-                <option value="Artificial Intelligence">Artificial Intelligence</option>
-                <option value="Android Development">Android Development</option>
-                <option value="Biometrics">Biometrics</option>
-                <option value="DevOps">DevOps</option>
-
-            </select>
-
-            <!-- Categoria: Desenvolvimento -->
-            <div class="projects-grid" id="projects-grid">
-                <!-- Tema: Desenvolvimento Android -->
-                <div class="project-item" data-tech="Android Development">
-                    <img src="assets/projects/Android.png" alt="Android Development">
-                    <h3>Android Development</h3>
-                    <p>Explore my projects related to Android app development.</p>
-                    <a href="https://github.com/lukepv123/Portfolio/tree/master/Android%20Development/Gradle" target="_blank" class="project-btn">View Projects</a>
-                </div>
-
-                <!-- Tema: Inteligência Artificial -->
-                <div class="project-item" data-tech="Artificial Intelligence">
-                    <img src="assets/projects/AI and machine learning.png" alt="Artificial Intelligence">
-                    <h3>Artificial Intelligence</h3>
-                    <p>Explore my projects in Artificial Intelligence and Machine Learning.</p>
-                    <a href="https://github.com/lukepv123/Portfolio/tree/master/Artificial%20Intelligence" target="_blank" class="project-btn">View Projects</a>
-                </div>
-
-                <!-- Tema: Visão Computacional -->
-                <div class="project-item" data-tech="Computer Vision">
-                    <img src="assets/projects/Computer Vision.png" alt="Computer Vision">
-                    <h3>Computer Vision</h3>
-                    <p>Explore my projects in Computer Vision technologies.</p>
-                    <a href="https://github.com/lukepv123/Portfolio/tree/master/Computer%20Vision" target="_blank" class="project-btn">View Projects</a>
-                </div>
-
-                <!-- Tema: Análise de Dados -->
-                <div class="project-item" data-tech="Data Analysis">
-                    <img src="assets/projects/Data Analysis.png" alt="Data Analysis">
-                    <h3>Data Analysis</h3>
-                    <p>Explore my projects in Data Analysis and Business Intelligence.</p>
-                    <a href="https://github.com/lukepv123/Portfolio/tree/master/Data%20Analysis" target="_blank" class="project-btn">View Projects</a>
-                </div>
-                
-                <!-- Tema: Biometria -->
-                <div class="project-item" data-tech="Biometrics">
-                    <img src="assets/projects/biometrics.png" alt="Biometrics">
-                    <h3>Biometrics</h3>
-                    <p>Follow the demonstration video on linkedin </p>
-                    <a href="https://www.linkedin.com/posts/lucas-petenusso-viana-710b5024b_biometrics-facialrecognition-digitalsecurity-activity-7295934641847373826-tONo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD3tjPwBRvMcYaJuY07v39nyQjktOJ7LbLI" target="_blank" class="project-btn">View Projects</a>
-                </div>
-                
-                
-                <!-- Tema: DevOps -->
-                <div class="project-item" data-tech="DevOps">
-                    <img src="assets/projects/devOps.png" alt="DevOps">
-                    <h3>DevOps</h3>
-                    <p>Explore my projects in DevOps philosophy (IaC, etc) </p>
-                    <a href="https://github.com/lukepv123/Portfolio/tree/master/IaC/Terraform/azure" target="_blank" class="project-btn">View Projects</a>
-                </div>
-                                
-
-                <!-- Tema: Desenvolvimento Desktop -->
-                <!-- <div class="project-item" data-tech="Desktop Development">
-                    <img src="assets/projects/Desktop Development.png" alt="Desktop Development">
-                    <h3>Desktop Development</h3>
-                    <p>Explore my projects in Desktop Application development.</p>
-                    <a href="C:/Users/PC/Documents/Programming/Git/Desktop Development" target="_blank" class="project-btn">View Projects</a>
-                </div> -->
-                
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer id="contact">
-        <p>&copy; 2024 Lucas Petenusso Viana. All Rights Reserved.</p>
-        <p>Email: lukepv123@gmail.com</p>
-    </footer>
-
-    <!-- Script para Filtrar Projetos -->
-    <script src="scripts3.js"></script>
-
-</body>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

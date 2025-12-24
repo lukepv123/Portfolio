@@ -1,0 +1,42 @@
+/* Estilo base para o botão/link */
+.btn-primary {
+    display: inline-flex; /* Usar inline-flex para se comportar como um botão */
+    padding: 10px 24px; /* Ajuste no padding para um visual mais equilibrado */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 48px;
+    border: solid 1px var(--zinc-700);
+    color: var(--blue-50, #EFF6FF);
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.25rem; /* Reduzido para melhor proporção */
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    text-decoration: none; /* Remover sublinhado padrão do link */
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer;
+    white-space: nowrap; /* Evitar que o texto quebre */
+}
+
+/* Pseudo-elemento para a transição de background */
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(93deg, var(--blue-800, #2563EB) 0.18%, var(--blue-700, #1D4ED8) 100.18%);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Efeito hover */
+.btn-primary:hover {
+    border-color: var(--blue-600);
+}
+
+.btn-primary:hover::before {
+    opacity: 1;
+}

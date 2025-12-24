@@ -1,0 +1,83 @@
+.s-cta .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 8rem;
+    background: url(../imgs/background-cta.svg);
+    border-radius: 3rem;
+}
+
+.s-cta h1 {
+    color: var(--zinc-50, #FAFAFA);
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
+}
+
+.s-cta p {
+    color: var(--zinc-400);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    text-align: center;
+    width: 100%;
+    max-width: 32rem;
+}
+
+.s-cta a {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    width: fit-content;
+    gap: 8px;
+    color: var(--blue-50, #EFF6FF);
+    font-family: "DM Sans";
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+    border: 1px solid var(--blue-50, #EFF6FF);
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.s-cta a:hover {
+    background-color: var(--blue-600, #EFF6FF);
+    border: 1px solid var(--blue-600,);
+}
+
+.s-cta strong {
+    color: var(--blue-500);
+    font-family: "DM Sans";
+}
+
+@media (max-width: 992px) {
+    .s-cta .container {
+        padding: 6rem 2rem;
+        border-radius: 2rem;
+    }
+    .s-cta h1 {
+        font-size: 2.5rem;
+    }
+    .s-cta p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .s-cta .container {
+        padding: 5rem 2rem;
+    }
+    .s-cta h1 {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+    .s-cta p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+}
