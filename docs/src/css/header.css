@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: var(--zinc-950);
+    position: relative;
+    border-bottom: 1px solid var(--zinc-800);
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    padding: 1rem 7rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: var(--zinc-50);
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+nav ul li a:hover{
+    color: var(--zinc-300);
+}
+
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.menu-hamburguer span {
+    width: 2rem;
+    height: 0.25rem;
+    background: var(--zinc-50);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.menu-hamburguer.aberto span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.menu-hamburguer.aberto span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.menu-hamburguer.aberto span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+@media (max-width: 1200px) {
+    header .container {
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container {
+        padding: 1rem 2rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        padding: 1.5rem 1rem;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--zinc-950);
+        border-bottom: 1px solid var(--zinc-800);
+    }
+
+    nav.menu-aberto {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        padding: 0.5rem 0;
+    }
+}

@@ -1,0 +1,19 @@
+.label {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid var(--blue-100);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    user-select: none;
+    background-color: var(--blue-50);
+    
+}
+
+.label h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    color: var(--blue-600);
+}

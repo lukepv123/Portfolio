@@ -1,0 +1,55 @@
+<svg width="1216" height="538" viewBox="0 0 1216 538" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_121_2413)">
+<rect width="1216" height="538" fill="#09090B"/>
+<mask id="mask0_121_2413" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-30" y="-101" width="1277" height="741">
+<rect x="-30" y="-101" width="1277" height="741" fill="url(#paint0_radial_121_2413)"/>
+</mask>
+<g mask="url(#mask0_121_2413)">
+<path d="M29 -4V569.5" stroke="#18181B"/>
+<path d="M77 -4V569.5" stroke="#18181B"/>
+<path d="M125 -4V569.5" stroke="#18181B"/>
+<path d="M173 -4V569.5" stroke="#18181B"/>
+<path d="M221 -4V569.5" stroke="#18181B"/>
+<path d="M269 -4V569.5" stroke="#18181B"/>
+<path d="M317 -4V569.5" stroke="#18181B"/>
+<path d="M365 -4V569.5" stroke="#18181B"/>
+<path d="M413 -4V569.5" stroke="#18181B"/>
+<path d="M461 -4V569.5" stroke="#18181B"/>
+<path d="M509 -4V569.5" stroke="#18181B"/>
+<path d="M557 -4V569.5" stroke="#18181B"/>
+<path d="M605 -4V569.5" stroke="#18181B"/>
+<path d="M653 -4V569.5" stroke="#18181B"/>
+<path d="M701 -4V569.5" stroke="#18181B"/>
+<path d="M749 -4V569.5" stroke="#18181B"/>
+<path d="M797 -4V569.5" stroke="#18181B"/>
+<path d="M845 -4V569.5" stroke="#18181B"/>
+<path d="M893 -4V569.5" stroke="#18181B"/>
+<path d="M941 -4V569.5" stroke="#18181B"/>
+<path d="M989 -4V569.5" stroke="#18181B"/>
+<path d="M1037 -4V569.5" stroke="#18181B"/>
+<path d="M1085 -4V569.5" stroke="#18181B"/>
+<path d="M1133 -4V569.5" stroke="#18181B"/>
+<path d="M1181 -4V569.5" stroke="#18181B"/>
+<path d="M-30 43H1239.5" stroke="#18181B"/>
+<path d="M-30 91H1239.5" stroke="#18181B"/>
+<path d="M-30 139H1239.5" stroke="#18181B"/>
+<path d="M-30 187H1239.5" stroke="#18181B"/>
+<path d="M-30 235H1239.5" stroke="#18181B"/>
+<path d="M-30 283H1239.5" stroke="#18181B"/>
+<path d="M-30 331H1239.5" stroke="#18181B"/>
+<path d="M-30 379H1239.5" stroke="#18181B"/>
+<path d="M-30 427H1239.5" stroke="#18181B"/>
+<path d="M-30 475H1239.5" stroke="#18181B"/>
+<path d="M-30 523H1239.5" stroke="#18181B"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_121_2413" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(608.5 269.5) rotate(90) scale(370.5 638.5)">
+<stop offset="0.25" stop-color="#D9D9D9" stop-opacity="0"/>
+<stop offset="1" stop-color="#737373"/>
+</radialGradient>
+<clipPath id="clip0_121_2413">
+<rect width="1216" height="538" fill="white"/>
+</clipPath>
+</defs>
+</svg>
